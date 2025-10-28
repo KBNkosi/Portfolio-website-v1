@@ -1,6 +1,7 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import styles from "../styles/Hero.module.css";
 import heroImage from "../assets/images/graduate-photo.png";
+
 
 
 const Hero = () => {
