@@ -20,7 +20,7 @@ const Hero = () => {
               <i className="fa-solid fa-play" />
               View My Portfolio
             </a>
-            <a href="/#contact" className={`${styles.btn} ${styles.btnColor1}`}>
+            <a href="/#/contact" className={`${styles.btn} ${styles.btnColor1}`}>
               Hire Me
             </a>
           </div>
