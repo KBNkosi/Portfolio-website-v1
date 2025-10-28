@@ -194,14 +194,38 @@
   padding: 0;
   overflow: hidden;
   border-top: 1px solid var(--clr-border);
+  position: relative;
+}
+
+.skillsContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .skillsGrid {
   display: flex;
   gap: var(--space-lg);
   padding: var(--space-lg) 0;
-  animation: slideLeft 15s linear infinite;
   width: max-content;
+  position: relative;
+  animation: slideLeft 30s linear infinite;
+  will-change: transform;
+}
+
+/* Create a seamless loop by duplicating the skills */
+.skillsGrid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.1) 50%, 
+    rgba(255,255,255,0) 100%);
+  pointer-events: none;
 }
 
 @keyframes slideLeft {
@@ -209,12 +233,34 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 .skillsGrid:hover {
   animation-play-state: paused;
+}
+
+/* Add a subtle gradient fade on the sides */
+.skills::before,
+.skills::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.skills::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--clr-background) 0%, rgba(255,255,255,0) 100%);
+}
+
+.skills::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--clr-background) 0%, rgba(255,255,255,0) 100%);
 }
 
 .skillItem {

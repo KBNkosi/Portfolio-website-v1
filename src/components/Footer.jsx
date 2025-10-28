@@ -56,16 +56,10 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#hero">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
+              <a href="#projects">Portfolio</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -82,12 +76,12 @@ const Footer = () => {
               Johannesburg, South Africa
             </p>
             <p>
-              <i className="fas fa-phone" />
-              <a href="tel:+27672812905">+27 67 281 2905</a>
+              <i className="fab fa-whatsapp" />
+              <a href="https://wa.me/27672812905" target="_blank" rel="noopener noreferrer">+27 67 281 2905</a>
             </p>
             <p>
               <i className="fas fa-envelope" />
-              <a href="mailto:nkosikenny9@gmail.com">nkosikenny9@gmail.com</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nkosikenny9@gmail.com" target="_blank" rel="noopener noreferrer">nkosikenny9@gmail.com</a>
             </p>
           </div>
         </div>

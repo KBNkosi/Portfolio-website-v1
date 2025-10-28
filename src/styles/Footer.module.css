@@ -134,6 +134,7 @@
 }
 
 .footerBottom {
+    
     padding: var(--space-md) 0;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -166,7 +167,7 @@
     }
 
     .socialLink {
-        width: 45px;  /* Slightly larger on mobile for better touch targets */
+        width: 45px;  
         height: 45px;
     }
 

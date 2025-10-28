@@ -249,9 +249,9 @@
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
-  padding: var(--space-sm) var(--space-md);
+  padding: 10px var(--space-md);
   border: 2px solid var(--clr-primary);
-  border-radius: var(--radius);
+  border-radius: 25px;
 }
 
 .projectLink:hover {

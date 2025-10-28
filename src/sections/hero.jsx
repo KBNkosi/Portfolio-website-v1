@@ -20,7 +20,7 @@ const Hero = () => {
               <i className="fa-solid fa-play" />
               View My Portfolio
             </a>
-            <a href="/contact" className={`${styles.btn} ${styles.btnColor1}`}>
+            <a href="/#contact" className={`${styles.btn} ${styles.btnColor1}`}>
               Hire Me
             </a>
           </div>
@@ -53,39 +53,49 @@ const Hero = () => {
       </div>
 
       <div className={styles.skills}>
-        <div className={styles.skillsGrid}>
-          {[
-            { icon: "fa-solid fa-laptop-code", name: "Web Development" },
-            { icon: "fa-solid fa-cart-shopping", name: "E-commerce Solutions" },
-            { icon: "fa-solid fa-magnifying-glass", name: "SEO Optimization" },
-            { icon: "fa-solid fa-wrench", name: "Maintenance & Support" },
-          ]
-            .map((service, index) => (
+        <div className={styles.skillsContainer}>
+          <div className={styles.skillsGrid}>
+            {[
+              { icon: "fa-solid fa-laptop-code", name: "Web Development" },
+              { icon: "fa-solid fa-mobile-screen-button", name: "Responsive Design" },
+              { icon: "fa-brands fa-react", name: "React.js" },
+              { icon: "fa-brands fa-js", name: "JavaScript" },
+              { icon: "fa-brands fa-html5", name: "HTML5" },
+              { icon: "fa-brands fa-css3-alt", name: "CSS3" },
+              { icon: "fa-brands fa-node-js", name: "Node.js" },
+              { icon: "fa-solid fa-database", name: "MongoDB" },
+              { icon: "fa-brands fa-git-alt", name: "Git" },
+              { icon: "fa-brands fa-github", name: "GitHub" },
+              { icon: "fa-solid fa-cart-shopping", name: "E-commerce" },
+              { icon: "fa-solid fa-magnifying-glass", name: "SEO" },
+            ].map((skill, index) => (
               <div key={index} className={styles.skillItem}>
-                <i className={service.icon} />
-                {service.name}
+                <i className={skill.icon} />
+                <span>{skill.name}</span>
               </div>
-            ))
-            .concat(
-              // Duplicate items for seamless loop
-              [
-                { icon: "fa-solid fa-laptop-code", name: "Web Development" },
-                {
-                  icon: "fa-solid fa-cart-shopping",
-                  name: "E-commerce Solutions",
-                },
-                {
-                  icon: "fa-solid fa-magnifying-glass",
-                  name: "SEO Optimization",
-                },
-                { icon: "fa-solid fa-wrench", name: "Maintenance & Support" },
-              ].map((service, index) => (
-                <div key={`dup-${index}`} className={styles.skillItem}>
-                  <i className={service.icon} />
-                  {service.name}
-                </div>
-              ))
-            )}
+            ))}
+            
+            {/* Duplicate items for seamless loop */}
+            {[
+              { icon: "fa-solid fa-laptop-code", name: "Web Development" },
+              { icon: "fa-solid fa-mobile-screen-button", name: "Responsive Design" },
+              { icon: "fa-brands fa-react", name: "React.js" },
+              { icon: "fa-brands fa-js", name: "JavaScript" },
+              { icon: "fa-brands fa-html5", name: "HTML5" },
+              { icon: "fa-brands fa-css3-alt", name: "CSS3" },
+              { icon: "fa-brands fa-node-js", name: "Node.js" },
+              { icon: "fa-solid fa-database", name: "MongoDB" },
+              { icon: "fa-brands fa-git-alt", name: "Git" },
+              { icon: "fa-brands fa-github", name: "GitHub" },
+              { icon: "fa-solid fa-cart-shopping", name: "E-commerce" },
+              { icon: "fa-solid fa-magnifying-glass", name: "SEO" },
+            ].map((skill, index) => (
+              <div key={`dup-${index}`} className={styles.skillItem} aria-hidden="true">
+                <i className={skill.icon} />
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

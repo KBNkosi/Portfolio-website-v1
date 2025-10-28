@@ -22,16 +22,17 @@ const Contact = () => {
                   </div>
                   <div className={styles.contactContent}>
                     <h4>Email</h4>
-                    <a href="mailto:nkosikenny9@gmail.com">nkosikenny9@gmail.com</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nkosikenny9@gmail.com" target="_blank" rel="noopener noreferrer">nkosikenny9@gmail.com</a>
                   </div>
                 </div>
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
-                    <i className="fa-solid fa-phone" />
+                  <i className="fab fa-whatsapp" />
                   </div>
                   <div className={styles.contactContent}>
                     <h4>Phone</h4>
-                    <a href="tel:+27672812905">+27 67 281 2905</a>
+                    
+                    <a href="https://wa.me/27672812905" target="_blank" rel="noopener noreferrer">+27 67 281 2905</a>
                   </div>
                 </div>
                 <div className={styles.contactItem}>
