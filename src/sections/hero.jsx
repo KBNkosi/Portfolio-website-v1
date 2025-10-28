@@ -16,13 +16,13 @@ const Hero = () => {
           Passionate web developer crafting intuitive, responsive, and user-friendly web experiences that bring ideas to life.
           </p>
           <div className={styles.btnContainer}>
-            <a href="#projects" className={`${styles.btn} ${styles.btnColor2}`}>
+            <Link to="/projects" className={`${styles.btn} ${styles.btnColor2}`}>
               <i className="fa-solid fa-play" />
               View My Portfolio
-            </a>
-            <a href="/#/contact" className={`${styles.btn} ${styles.btnColor1}`}>
+            </Link>
+            <Link to="/contact" className={`${styles.btn} ${styles.btnColor1}`}>
               Hire Me
-            </a>
+            </Link>
           </div>
         </div>
 
