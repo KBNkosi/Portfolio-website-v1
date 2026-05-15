@@ -12,16 +12,15 @@ Welcome to my personal portfolio website! This is a modern, responsive portfolio
 - **Modern UI/UX**: Clean and intuitive user interface with smooth animations
 - **Project Showcase**: Display projects with images, descriptions, and technologies used
 - **Contact Form**: Easy way for visitors to get in touch
-- **Dark/Light Mode**: Toggle between different color schemes (coming soon)
+
 
 ## 🛠️ Technologies Used
 
 - **Frontend**: React 19, Vite
 - **Styling**: CSS Modules
 - **Routing**: React Router v7
-- **Animations**: Framer Motion
 - **Icons**: Font Awesome
-- **Deployment**: Vercel/Netlify (configurable)
+- **Deployment**: GitHub Pages
 
 ## 🚀 Getting Started
 
@@ -34,7 +33,7 @@ Welcome to my personal portfolio website! This is a modern, responsive portfolio
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/KBNkosi/Portfolio-website.git
+   git clone https://github.com/KBNkosi/Portfolio-website-v1.git
    cd Portfolio-website
    ```
 
@@ -68,7 +67,7 @@ src/
 
 ## 🚀 Deployment
 
-This project is configured for deployment on Vercel. To deploy your own version:
+To deploy your own version:
 
 1. Push your code to a GitHub repository
 2. Connect your Vercel account to your GitHub repository
@@ -92,7 +91,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [React Router](https://reactrouter.com/)
-- [Framer Motion](https://www.framer.com/motion/)
 - [Font Awesome](https://fontawesome.com/)
 
 ## 📬 Contact
